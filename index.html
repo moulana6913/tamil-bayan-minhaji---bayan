@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Mobile Responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>தமிழ் பயான் | Islamic Bayan Tamil | மார்க்க சொற்பொழிவுகள்</title>
+
+  <meta name="description"
+        content="தமிழ் பயான், இஸ்லாமிய மார்க்க சொற்பொழிவுகள், பயான் ஆடியோ மற்றும் வீடியோக்களை எளிதாக கேட்டு பயன்பெறுங்கள்.">
+
+  <meta name="keywords"
+        content="Tamil Bayan, Islamic Bayan Tamil, Bayan Tamil, தமிழ் பயான், இஸ்லாமிய பயான், மார்க்க பயான், Islamic Speech Tamil">
+
+  <meta name="author" content="Your Website Name">
+
+  <!-- Google Search -->
+  <meta name="robots" content="index, follow">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://YOUR_DOMAIN.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:title"
+        content="தமிழ் பயான் | Islamic Bayan Tamil">
+
+  <meta property="og:description"
+        content="தமிழ் இஸ்லாமிய பயான் மற்றும் மார்க்க சொற்பொழிவுகள்">
+
+  <meta property="og:type" content="website">
+
+  <meta property="og:url"
+        content="https://YOUR_DOMAIN.com/">
+
+  <!-- Theme -->
+  <meta name="theme-color" content="#063b2b">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Noto Sans Tamil", sans-serif;
+      background: #f4f8f5;
+      color: #18352b;
+      line-height: 1.7;
+    }
+
+    /* HEADER */
+
+    header {
+      background: linear-gradient(135deg, #063b2b, #08734f);
+      color: white;
+      padding: 22px 16px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 3px 15px rgba(0,0,0,.15);
+    }
+
+    .header-inner {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+    }
+
+    .logo {
+      font-size: 21px;
+      font-weight: 800;
+    }
+
+    .logo span {
+      color: #d9b45b;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+      font-size: 14px;
+    }
+
+    /* HERO */
+
+    .hero {
+      background:
+        linear-gradient(rgba(3,48,35,.88), rgba(3,48,35,.88)),
+        radial-gradient(circle at center, #15966b, #063b2b);
+
+      color: white;
+      text-align: center;
+      padding: 55px 18px;
+    }
+
+    .hero .moon {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .hero h1 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: auto;
+      color: #e8f5ef;
+    }
+
+    /* CONTAINER */
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 30px 16px;
+    }
+
+    /* SEARCH */
+
+    .search-box {
+      margin-bottom: 25px;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 15px 18px;
+      border: 1px solid #cddbd4;
+      border-radius: 14px;
+      outline: none;
+      font-size: 15px;
+      background: white;
+    }
+
+    .search-box input:focus {
+      border-color: #08734f;
+      box-shadow: 0 0 0 3px rgba(8,115,79,.1);
+    }
+
+    /* CATEGORY */
+
+    .categories {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      padding-bottom: 12px;
+      margin-bottom: 25px;
+    }
+
+    .category {
+      border: none;
+      background: white;
+      color: #075238;
+      padding: 9px 16px;
+      border-radius: 30px;
+      white-space: nowrap;
+      cursor: pointer;
+      border: 1px solid #d7e4de;
+      font-family: inherit;
+    }
+
+    .category.active,
+    .category:hover {
+      background: #08734f;
+      color: white;
+    }
+
+    /* SECTION TITLE */
+
+    .section-title {
+      font-size: 23px;
+      margin-bottom: 18px;
+      color: #063b2b;
+    }
+
+    /* BAYAN GRID */
+
+    .bayan-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .bayan-card {
+      background: white;
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid #e0ebe5;
+      box-shadow: 0 5px 18px rgba(0,0,0,.06);
+      transition: .25s;
+    }
+
+    .bayan-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 25px rgba(0,0,0,.10);
+    }
+
+    .card-top {
+      background: linear-gradient(135deg,#075238,#0a8b60);
+      color: white;
+      padding: 24px 18px;
+      text-align: center;
+      font-size: 35px;
+    }
+
+    .card-content {
+      padding: 17px;
+    }
+
+    .card-content h3 {
+      font-size: 17px;
+      margin-bottom: 7px;
+      color: #063b2b;
+    }
+
+    .speaker {
+      font-size: 13px;
+      color: #687a72;
+    }
+
+    .date {
+      font-size: 12px;
+      color: #899890;
+      margin-top: 4px;
+    }
+
+    .read-btn {
+      display: inline-block;
+      margin-top: 13px;
+      background: #08734f;
+      color: white;
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 9px;
+      font-size: 13px;
+    }
+
+    /* SINGLE BAYAN PAGE */
+
+    #bayanPage {
+      display: none;
+    }
+
+    .back-btn {
+      display: inline-block;
+      background: #063b2b;
+      color: white;
+      text-decoration: none;
+      padding: 9px 15px;
+      border-radius: 9px;
+      margin-bottom: 20px;
+    }
+
+    .bayan-detail {
+      background: white;
+      padding: 25px;
+      border-radius: 18px;
+      box-shadow: 0 5px 20px rgba(0,0,0,.06);
+    }
+
+    .bayan-detail h1 {
+      color: #063b2b;
+      font-size: 26px;
+      margin-bottom: 8px;
+    }
+
+    .bayan-meta {
+      color: #718078;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    audio {
+      width: 100%;
+      margin: 15px 0 25px;
+    }
+
+    .bayan-text {
+      font-size: 16px;
+      color: #29473c;
+    }
+
+    .bayan-text h2 {
+      color: #08734f;
+      margin: 20px 0 8px;
+    }
+
+    /* SHARE */
+
+    .share-btn {
+      margin-top: 20px;
+      border: none;
+      background: #d9b45b;
+      color: #172d25;
+      padding: 11px 18px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-family: inherit;
+      font-weight: 600;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #063b2b;
+      color: #dcece5;
+      text-align: center;
+      padding: 30px 15px;
+      margin-top: 35px;
+    }
+
+    footer strong {
+      color: #d9b45b;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 750px) {
+
+      header {
+        padding: 16px;
+      }
+
+      .header-inner {
+        display: block;
+        text-align: center;
+      }
+
+      nav {
+        margin-top: 7px;
+      }
+
+      nav a {
+        margin: 0 7px;
+      }
+
+      .hero {
+        padding: 45px 15px;
+      }
+
+      .hero h1 {
+        font-size: 25px;
+      }
+
+      .bayan-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .container {
+        padding: 25px 13px;
+      }
+
+      .bayan-detail {
+        padding: 18px;
+      }
+
+      .bayan-detail h1 {
+        font-size: 22px;
+      }
+
+    }
+
+  </style>
+
+  <!-- STRUCTURED DATA / SEO -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "தமிழ் பயான்",
+    "url": "https://YOUR_DOMAIN.com/",
+    "description": "தமிழ் இஸ்லாமிய பயான் மற்றும் மார்க்க சொற்பொழிவுகள்",
+    "inLanguage": "ta"
+  }
+  </script>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+  <div class="header-inner">
+
+    <div class="logo">
+      ☪ <span>மின்ஹாஜி</span> பயான்கள் 
+    </div>
+
+    <nav>
+      <a href="#" onclick="showHome()">Home</a>
+      <a href="#latest">Bayan</a>
+    </nav>
+
+  </div>
+
+</header>
+
+
+<!-- HOME PAGE -->
+
+<main id="homePage">
+
+  <section class="hero">
+
+    <div class="moon">☪️</div>
+
+    <h1>தமிழ் இஸ்லாமிய பயான்</h1>
+
+    <p>
+      பயான், மார்க்க சொற்பொழிவுகள் மற்றும் இஸ்லாமிய அறிவுரைகளை
+      எளிதாக கேட்டு பயன்பெறுங்கள்.
+    </p>
+
+  </section>
+
+
+  <div class="container">
+
+    <!-- SEARCH -->
+
+    <div class="search-box">
+
+      <input
+        type="search"
+        id="searchInput"
+        placeholder="🔍 பயான் தேடுங்கள்..."
+        onkeyup="searchBayan()">
+
+    </div>
+
+
+    <!-- CATEGORIES -->
+
+    <div class="categories">
+
+      <button class="category active"
+              onclick="filterBayan('all',this)">
+        அனைத்தும்
+      </button>
+
+      <button class="category"
+              onclick="filterBayan('aqeedah',this)">
+        அகீதா
+      </button>
+
+      <button class="category"
+              onclick="filterBayan('salah',this)">
+        தொழுகை
+      </button>
+
+      <button class="category"
+              onclick="filterBayan('ramadan',this)">
+        ரமலான்
+      </button>
+
+      <button class="category"
+              onclick="filterBayan('akhlaq',this)">
+        ஒழுக்கம்
+      </button>
+
+    </div>
+
+
+    <!-- LATEST -->
+
+    <section id="latest">
+
+      <h2 class="section-title">
+        📖 சமீபத்திய பயான்கள்
+      </h2>
+
+      <div class="bayan-grid" id="bayanGrid">
+
+
+        <!-- BAYAN 1 -->
+
+        <article class="bayan-card"
+                 data-category="aqeedah"
+                 data-title="ஈமான் மற்றும் அதன் முக்கியத்துவம்">
+
+          <div class="card-top">
+            📿
+          </div>
+
+          <div class="card-content">
+
+            <h3>
+              தஸ்பீஹ் செய்வதன் சிறப்புகள்
+            </h3>
+
+            <div class="speaker">
+              🎙️ பயான்: மௌலவி முஹம்மது பிலால் மின்ஹாஜி
+            </div>
+
+            <div class="date">
+              📅 11-09-2026
+            </div>
+
+            <a class="read-btn"
+               href="#bayan1"
+               onclick="showBayan('bayan1')">
+              பயான் பார்க்க →
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- BAYAN 2 -->
+
+        <article class="bayan-card"
+                 data-category="salah"
+                 data-title="தொழுகையின் முக்கியத்துவம்">
+
+          <div class="card-top">
+            🕋
+          </div>
+
+          <div class="card-content">
+
+            <h3>
+              நபி ﷺ அவர்களின் உன்னதமான மார்க்கம் ( دين الاسلام ) 
+            </h3>
+
+            <div class="speaker">
+              🎙️ பயான்: மௌலவி முஹம்மது பிலால் மின்ஹாஜி
+            </div>
+
+            <div class="date">
+              📅 04-09-2026
+            </div>
+
+            <a class="read-btn"
+               href="#bayan2"
+               onclick="showBayan('bayan2')">
+              பயான் பார்க்க →
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- BAYAN 3 -->
+
+        <article class="bayan-card"
+                 data-category="ramadan"
+                 data-title="ரமலானின் சிறப்புகள்">
+
+          <div class="card-top">
+            🌙
+          </div>
+
+          <div class="card-content">
+
+            <h3>
+                தவிர்ந்து இருக்க வேண்டிய கெட்ட குணங்கள்
+            </h3>
+
+            <div class="speaker">
+              🎙️ பயான்: மௌலவி முஹம்மது பிலால் மின்ஹாஜி
+            </div>
+
+            <div class="date">
+              📅 28-08-2026
+            </div>
+
+            <a class="read-btn"
+               href="#bayan3"
+               onclick="showBayan('bayan3')">
+              பயான் பார்க்க →
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- BAYAN 4 -->
+
+        <article class="bayan-card"
+                 data-category="akhlaq"
+                 data-title="நல்லொழுக்கத்தின் முக்கியத்துவம்">
+
+          <div class="card-top">
+            ✨
+          </div>
+
+          <div class="card-content">
+
+            <h3>
+               ஸலவாத்து கூறுவதின் பலன்கள் 
+( صلى الله على محمد صلى الله عليه وسلم )
+
+            </h3>
+
+            <div class="speaker">
+              🎙️ பயான்:மௌலவி முஹம்மது பிலால் மின்ஹாஜி
+            </div>
+
+            <div class="date">
+              📅 21-08-2026
+            </div>
+
+            <a class="read-btn"
+               href="#bayan4"
+               onclick="showBayan('bayan4')">
+              பயான் பார்க்க →
+            </a>
+
+          </div>
+
+        </article>
+
+
+      </div>
+
+    </section>
+
+  </div>
+
+</main>
+
+
+<!-- SINGLE BAYAN PAGE -->
+
+<section id="bayanPage">
+
+  <div class="container">
+
+    <a href="#" class="back-btn" onclick="showHome()">
+      ← அனைத்து பயான்களும்
+    </a>
+
+    <article class="bayan-detail"
+             id="bayan1">
+
+      <h1>
+        தஸ்பீஹ் செய்வதன் சிறப்புகள்
+      </h1>
+
+      <div class="bayan-meta">
+        🎙️  பெயர்:மௌலவி முஹம்மது பிலால் மின்ஹாஜி &nbsp; | &nbsp; 📅 11-09-2026
+      </div>
+
+      <!-- AUDIO -->
+
+     <audio controls>
+    <source src="bayan 4.m4a" type="audio/mp4">
+</audio>
+
+
+      <div class="bayan-text">
+
+        <h2>بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</h2>
+
+        <p>
+          அல்ஹம்துலில்லாஹ். எல்லாப் புகழும் அல்லாஹ்வுக்கே.
+          ஈமான் என்பது ஒரு முஸ்லிமின் வாழ்க்கையின் மிக முக்கியமான
+          அடிப்படையாகும்.
+        </p>
+
+        <p>
+          அல்லாஹ்வின் மீது நம்பிக்கை வைத்து, அவனுடைய கட்டளைகளை
+          பின்பற்றி வாழ்வது ஒரு முஃமினின் முக்கிய பண்பாகும்.
+        </p>
+
+        <h2>முக்கியமான அறிவுரை</h2>
+
+        <p>
+          நமது ஈமானை தொடர்ந்து வளர்த்துக் கொள்ள வேண்டும்.
+          நல்ல அமல்களைச் செய்வதும், தீமைகளைத் தவிர்ப்பதும்
+          ஈமானை வலுப்படுத்தும்.
+        </p>
+
+      </div>
+
+
+      <button class="share-btn"
+              onclick="shareBayan('ஈமான் மற்றும் அதன் முக்கியத்துவம்')">
+
+        📤 பகிரவும்
+
+      </button>
+
+    </article>
+
+
+    <article class="bayan-detail"
+             id="bayan2"
+             style="display:none;">
+
+      <h1>
+          நபி ﷺ அவர்களின் உன்னதமான மார்க்கம் ( دين الاسلام ) 
+           
+      </h1>
+
+      <div class="bayan-meta">
+        🎙️  பெயர் : மௌலவி முஹம்மது பிலால் மின்ஹாஜி &nbsp; | &nbsp; 📅 04-09-2026
+      </div>
+
+      <audio controls preload="metadata">
+
+        <source
+          src="bayan 3.m4a"
+          type="audio/mpeg">
+
+      </audio>
+
+      <div class="bayan-text">
+
+        <h2>தொழுகை</h2>
+
+        <p>
+          தொழுகை ஒரு முஸ்லிமின் வாழ்க்கையில் மிக முக்கியமான
+          இபாதத் ஆகும். ஐந்து நேர தொழுகையையும் முறையாக
+          நிறைவேற்ற வேண்டும்.
+        </p>
+
+      </div>
+
+      <button class="share-btn"
+              onclick="shareBayan('தொழுகையின் முக்கியத்துவம்')">
+
+        📤 பகிரவும்
+
+      </button>
+
+    </article>
+
+
+    <article class="bayan-detail"
+             id="bayan3"
+             style="display:none;">
+
+      <h1>
+        தவிர்ந்து இருக்க வேண்டிய கெட்ட குணங்கள்
+      </h1>
+
+      <div class="bayan-meta">
+        🎙️ பெயர் : மௌலவி முஹம்மது பிலால் மின்ஹாஜி  &nbsp; | &nbsp; 📅 28-08-2026
+      </div>
+
+      <audio controls>
+
+        <source
+          src="bayan 2.m4a"
+          type="audio/mpeg">
+
+      </audio>
+
+      <div class="bayan-text">
+
+        <h2>ரமலான்</h2>
+
+        <p>
+          ரமலான் மாதம் முஸ்லிம்களுக்கு மிகச் சிறப்பான மாதமாகும்.
+          நோன்பு, குர்ஆன் ஓதுதல், துஆ மற்றும் நல்ல அமல்களில்
+          அதிகமாக ஈடுபட வேண்டும்.
+        </p>
+
+      </div>
+
+      <button class="share-btn"
+              onclick="shareBayan('ரமலானின் சிறப்புகள்')">
+
+        📤 பகிரவும்
+
+      </button>
+
+    </article>
+
+
+    <article class="bayan-detail"
+             id="bayan4"
+             style="display:none;">
+
+      <h1>
+        ஸலவாத்து கூறுவதின் பலன்கள் 
+( صلى الله على محمد صلى الله عليه وسلم )
+
+      </h1>
+
+      <div class="bayan-meta">
+        🎙️  பெயர்:  மௌலவி முஹம்மது பிலால் மின்ஹாஜி &nbsp; | &nbsp;  📅 21-08-2026
+      </div>
+
+      <audio controls>
+
+        <source
+          src="bayan 1.m4a"
+          type="audio/mpeg">
+
+      </audio>
+
+      <div class="bayan-text">
+
+        <h2>நல்லொழுக்கம்</h2>
+
+        <p>
+          நல்லொழுக்கம் ஒரு முஸ்லிமின் அழகாகும். பிறரிடம்
+          அன்பாகவும் மரியாதையாகவும் நடந்து கொள்வது
+          இஸ்லாம் கற்றுத்தரும் முக்கியமான பண்புகளில் ஒன்றாகும்.
+        </p>
+
+      </div>
+
+      <button class="share-btn"
+              onclick="shareBayan('நல்லொழுக்கத்தின் முக்கியத்துவம்')">
+
+        📤 பகிரவும்
+
+      </button>
+
+    </article>
+
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <p>
+    ☪️ <strong>தமிழ் பயான்</strong>
+  </p>
+
+  <p>
+    Islamic Bayan • Tamil Islamic Speech
+  </p>
+
+  <p>
+    © 2026 All Rights Reserved
+  </p>
+
+</footer>
+
+
+<script>
+
+  /* SHOW BAYAN */
+
+  function showBayan(id) {
+
+    document.getElementById("homePage").style.display = "none";
+
+    document.getElementById("bayanPage").style.display = "block";
+
+    document.querySelectorAll(".bayan-detail").forEach(function(page) {
+      page.style.display = "none";
+    });
+
+    document.getElementById(id).style.display = "block";
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+
+
+  /* SHOW HOME */
+
+  function showHome() {
+
+    document.getElementById("homePage").style.display = "block";
+
+    document.getElementById("bayanPage").style.display = "none";
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+
+
+  /* SEARCH */
+
+  function searchBayan() {
+
+    let input =
+      document.getElementById("searchInput")
+      .value
+      .toLowerCase();
+
+    let cards =
+      document.querySelectorAll(".bayan-card");
+
+    cards.forEach(function(card) {
+
+      let title =
+        card.getAttribute("data-title").toLowerCase();
+
+      if (title.includes(input)) {
+
+        card.style.display = "";
+
+      } else {
+
+        card.style.display = "none";
+
+      }
+
+    });
+
+  }
+
+
+  /* CATEGORY FILTER */
+
+  function filterBayan(category, button) {
+
+    document.querySelectorAll(".category")
+      .forEach(function(btn) {
+        btn.classList.remove("active");
+      });
+
+    button.classList.add("active");
+
+    document.querySelectorAll(".bayan-card")
+      .forEach(function(card) {
+
+        if (
+          category === "all" ||
+          card.getAttribute("data-category") === category
+        ) {
+
+          card.style.display = "";
+
+        } else {
+
+          card.style.display = "none";
+
+        }
+
+      });
+
+  }
+
+
+  /* SHARE */
+
+  function shareBayan(title) {
+
+    let shareData = {
+
+      title: title,
+
+      text:
+        title +
+        " - தமிழ் இஸ்லாமிய பயான்",
+
+      url: window.location.href
+
+    };
+
+    if (navigator.share) {
+
+      navigator.share(shareData);
+
+    } else {
+
+      navigator.clipboard.writeText(
+        window.location.href
+      );
+
+      alert("Link copied!");
+
+    }
+
+  }
+
+
+  /* URL HASH */
+
+  window.addEventListener("load", function() {
+
+    let hash = window.location.hash;
+
+    if (hash === "#bayan1") {
+      showBayan("bayan1");
+    }
+
+    if (hash === "#bayan2") {
+      showBayan("bayan2");
+    }
+
+    if (hash === "#bayan3") {
+      showBayan("bayan3");
+    }
+
+    if (hash === "#bayan4") {
+      showBayan("bayan4");
+    }
+
+  });
+
+</script>
+
+</body>
+</html>
