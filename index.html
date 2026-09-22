@@ -114,11 +114,39 @@
       padding: 55px 18px;
     }
 
-    .hero .moon {
-      font-size: 42px;
-      margin-bottom: 10px;
-    }
+    
+    .hero-logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 18px;
+  border: 4px solid #d9b45b;
+  box-shadow: 0 6px 20px rgba(0,0,0,.25);
+}
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 
+.logo-wrap img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.logo-wrap .logo {
+  font-size: 21px;
+  font-weight: 800;
+}
+.hero .img {
+     width: 100%;
+     display: flex;
+      justify-content: centre ;
+    }
     .hero h1 {
       font-size: 30px;
       margin-bottom: 10px;
@@ -407,9 +435,15 @@
 
   <div class="header-inner">
 
-    <div class="logo">
-      ☪ <span>மின்ஹாஜி</span> பயான்கள் 
-    </div>
+    <div class="logo-wrap">
+
+  <img src="circle_logo.png" alt="Logo">
+
+  <div class="logo">
+    <span>மின்ஹாஜி</span> பயான்கள்
+  </div>
+
+</div>
 
     <nav>
       <a href="#" onclick="showHome()">Home</a>
@@ -427,7 +461,9 @@
 
   <section class="hero">
 
-    <div class="moon">☪️</div>
+    <div class="img">
+  <img class="hero-logo" src="circle_logo.png" alt="மின்ஹாஜி பயான் Logo">
+</div>
 
     <h1>தமிழ் இஸ்லாமிய பயான்</h1>
 
