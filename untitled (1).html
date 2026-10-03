@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>நபியின் பேரன்பு ﷺ | தமிழ் இஸ்லாமிய பயான்</title>
+
+<style>
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f5f7f9;
+    color:#222;
+}
+
+header{
+    background:#075e54;
+    color:white;
+    padding:18px;
+    text-align:center;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.container{
+    max-width:700px;
+    margin:auto;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    margin-bottom:15px;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+.card h2{
+    color:#075e54;
+    margin-bottom:8px;
+}
+
+.card p{
+    color:#666;
+    margin-bottom:15px;
+}
+
+.btn{
+    display:block;
+    text-decoration:none;
+    background:#075e54;
+    color:white;
+    text-align:center;
+    padding:12px;
+    border-radius:10px;
+    font-weight:bold;
+}
+
+#peranbuMenu{
+    display:none;
+}
+
+.peranbu-list{
+    margin-top:20px;
+}
+
+.peranbu-item{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    text-decoration:none;
+    color:#222;
+    background:#f8f8f8;
+    padding:15px;
+    margin-bottom:10px;
+    border-radius:12px;
+    border:1px solid #eee;
+}
+
+.peranbu-number{
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    background:#075e54;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:bold;
+}
+
+.bayan-detail{
+    display:none;
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+.bayan-detail h1{
+    color:#075e54;
+    margin-bottom:15px;
+}
+
+.back{
+    display:block;
+    margin-top:20px;
+    text-align:center;
+    color:#075e54;
+    text-decoration:none;
+    font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    ☪ தமிழ் பயான்
+</header>
+
+<div class="container">
+
+    <!-- HOME -->
+
+    <div id="home">
+
+        <div class="card">
+            <h2>❤️ நபியின் பேரன்பு ﷺ</h2>
+            <p>நபி ﷺ அவர்களின் வாழ்க்கை மற்றும் உம்மத்தின் மீது பேரன்பு</p>
+
+            <a href="#peranbuMenu"
+               class="btn"
+               onclick="showPeranbuMenu()">
+                பயான் பார்க்க →
+            </a>
+        </div>
+
+    </div>
+
+
+    <!-- PERANBU MENU -->
+
+    <div id="peranbuMenu">
+
+        <div class="card">
+
+            <h2>❤️ நபியின் பேரன்பு ﷺ</h2>
+
+            <p>
+                கீழே உள்ள தலைப்புகளில் ஒன்றைத் தேர்வு செய்யுங்கள்
+            </p>
+
+            <div class="peranbu-list">
+
+                <a href="#peranbu1"
+                   class="peranbu-item"
+                   onclick="showPeranbu('peranbu1')">
+                    <span class="peranbu-number">1</span>
+                    உம்மத்தின் மீது பேரன்பு
+                </a>
+
+                <a href="#peranbu2"
+                   class="peranbu-item"
+                   onclick="showPeranbu('peranbu2')">
+                    <span class="peranbu-number">2</span>
+                    நபியின் பிறப்பு ﷺ
+                </a>
+
+                <a href="#peranbu3"
+                   class="peranbu-item"
+                   onclick="showPeranbu('peranbu3')">
+                    <span class="peranbu-number">3</span>
+                    நபியின் வாழ்க்கை வரலாறு ﷺ
+                </a>
+
+                <a href="#peranbu4"
+                   class="peranbu-item"
+                   onclick="showPeranbu('peranbu4')">
+                    <span class="peranbu-number">4</span>
+                    நபியின் நற்குணங்கள் ﷺ
+                </a>
+
+                <a href="#peranbu5"
+                   class="peranbu-item"
+                   onclick="showPeranbu('peranbu5')">
+                    <span class="peranbu-number">5</span>
+                    நபியின் உம்மத்தின் மீது அக்கறை
+                </a>
+
+                <a href="#peranbu6"
+                   class="peranbu-item"
+                   onclick="showPeranbu('peranbu6')">
+                    <span class="peranbu-number">6</span>
+                    நபியின் ஷஃபாஅத் ﷺ
+                </a>
+
+                <a href="#peranbu7"
+                   class="peranbu-item"
+                   onclick="showPeranbu('peranbu7')">
+                    <span class="peranbu-number">7</span>
+                    நபியை நேசிப்பதன் சிறப்பு ﷺ
+                </a>
+
+            </div>
+
+            <a href="#home"
+               class="back"
+               onclick="showHome()">
+                ← முகப்புக்கு செல்ல
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- BAYAN 1 -->
+
+    <div id="peranbu1" class="bayan-detail">
+
+        <h1>❤️ உம்மத்தின் மீது பேரன்பு</h1>
+
+        <p>
+            இங்கே உம்மத்தின் மீது நபி ﷺ அவர்களின் பேரன்பு பற்றிய
+            Bayan பின்னர் சேர்க்கப்படும்.
+        </p>
+
+        <a href="#peranbuMenu"
+           class="back"
+           onclick="showPeranbuMenu()">
+            ← தலைப்புகளுக்கு செல்ல
+        </a>
+
+    </div>
+
+
+    <!-- BAYAN 2 -->
+
+    <div id="peranbu2" class="bayan-detail">
+
+        <h1>🌙 நபியின் பிறப்பு ﷺ</h1>
+
+        <p>
+            இந்த தலைப்பிற்கான Bayan பின்னர் சேர்க்கப்படும்.
+        </p>
+
+        <a href="#peranbuMenu"
+           class="back"
+           onclick="showPeranbuMenu()">
+            ← தலைப்புகளுக்கு செல்ல
+        </a>
+
+    </div>
+
+
+    <!-- BAYAN 3 -->
+
+    <div id="peranbu3" class="bayan-detail">
+
+        <h1>📖 நபியின் வாழ்க்கை வரலாறு ﷺ</h1>
+
+        <p>
+            இந்த தலைப்பிற்கான Bayan பின்னர் சேர்க்கப்படும்.
+        </p>
+
+        <a href="#peranbuMenu"
+           class="back"
+           onclick="showPeranbuMenu()">
+            ← தலைப்புகளுக்கு செல்ல
+        </a>
+
+    </div>
+
+
+    <!-- BAYAN 4 -->
+
+    <div id="peranbu4" class="bayan-detail">
+
+        <h1>✨ நபியின் நற்குணங்கள் ﷺ</h1>
+
+        <p>
+            இந்த தலைப்பிற்கான Bayan பின்னர் சேர்க்கப்படும்.
+        </p>
+
+        <a href="#peranbuMenu"
+           class="back"
+           onclick="showPeranbuMenu()">
+            ← தலைப்புகளுக்கு செல்ல
+        </a>
+
+    </div>
+
+
+    <!-- BAYAN 5 -->
+
+    <div id="peranbu5" class="bayan-detail">
+
+        <h1>❤️ நபியின் உம்மத்தின் மீது அக்கறை</h1>
+
+        <p>
+            இந்த தலைப்பிற்கான Bayan பின்னர் சேர்க்கப்படும்.
+        </p>
+
+        <a href="#peranbuMenu"
+           class="back"
+           onclick="showPeranbuMenu()">
+            ← தலைப்புகளுக்கு செல்ல
+        </a>
+
+    </div>
+
+
+    <!-- BAYAN 6 -->
+
+    <div id="peranbu6" class="bayan-detail">
+
+        <h1>🤲 நபியின் ஷஃபாஅத் ﷺ</h1>
+
+        <p>
+            இந்த தலைப்பிற்கான Bayan பின்னர் சேர்க்கப்படும்.
+        </p>
+
+        <a href="#peranbuMenu"
+           class="back"
+           onclick="showPeranbuMenu()">
+            ← தலைப்புகளுக்கு செல்ல
+        </a>
+
+    </div>
+
+
+    <!-- BAYAN 7 -->
+
+    <div id="peranbu7" class="bayan-detail">
+
+        <h1>🕌 நபியை நேசிப்பதன் சிறப்பு ﷺ</h1>
+
+        <p>
+            இந்த தலைப்பிற்கான Bayan பின்னர் சேர்க்கப்படும்.
+        </p>
+
+        <a href="#peranbuMenu"
+           class="back"
+           onclick="showPeranbuMenu()">
+            ← தலைப்புகளுக்கு செல்ல
+        </a>
+
+    </div>
+
+</div>
+
+
+<script>
+
+function hideAll(){
+
+    document.getElementById("home").style.display = "none";
+
+    document.getElementById("peranbuMenu").style.display = "none";
+
+    document.querySelectorAll(".bayan-detail").forEach(function(el){
+        el.style.display = "none";
+    });
+
+}
+
+
+function showHome(){
+
+    hideAll();
+
+    document.getElementById("home").style.display = "block";
+
+    window.scrollTo(0,0);
+}
+
+
+function showPeranbuMenu(){
+
+    hideAll();
+
+    document.getElementById("peranbuMenu").style.display = "block";
+
+    window.scrollTo(0,0);
+}
+
+
+function showPeranbu(id){
+
+    hideAll();
+
+    document.getElementById(id).style.display = "block";
+
+    window.scrollTo(0,0);
+}
+
+
+/* Browser Back / Refresh */
+
+window.addEventListener("load", function(){
+
+    let hash = window.location.hash;
+
+    if(hash === "#peranbuMenu"){
+        showPeranbuMenu();
+    }
+
+    else if(hash.startsWith("#peranbu")){
+        let id = hash.substring(1);
+
+        if(document.getElementById(id)){
+            showPeranbu(id);
+        }
+    }
+
+});
+
+
+window.addEventListener("hashchange", function(){
+
+    let hash = window.location.hash;
+
+    if(hash === "#peranbuMenu"){
+        showPeranbuMenu();
+    }
+
+    else if(hash.startsWith("#peranbu")){
+
+        let id = hash.substring(1);
+
+        if(document.getElementById(id)){
+            showPeranbu(id);
+        }
+
+    }
+
+});
+
+</script>
+
+</body>
+</html>
