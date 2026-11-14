@@ -22,7 +22,7 @@
   <meta name="robots" content="index, follow">
 
   <!-- Canonical -->
-  <link rel="canonical" href="https://moulana6913.github.io/tamil-bayan-minhaji---bayan/">
+  <link rel="canonical" href="https://YOUR_DOMAIN.com/">
 
   <!-- Open Graph -->
   <meta property="og:title"
@@ -34,7 +34,7 @@
   <meta property="og:type" content="website">
 
   <meta property="og:url"
-        content="https://moulana6913.github.io/tamil-bayan-minhaji---bayan/">
+        content="https://YOUR_DOMAIN.com/">
 
   <!-- Theme -->
   <meta name="theme-color" content="#063b2b">
@@ -419,7 +419,7 @@
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "தமிழ் பயான்",
-    "url": "https://moulana6913.github.io/tamil-bayan-minhaji---bayan/",
+    "url": "https://YOUR_DOMAIN.com/",
     "description": "தமிழ் இஸ்லாமிய பயான் மற்றும் மார்க்க சொற்பொழிவுகள்",
     "inLanguage": "ta"
   }
@@ -448,7 +448,6 @@
     <nav>
       <a href="#" onclick="showHome()">Home</a>
       <a href="#latest">Bayan</a>
-      <a href="admin.html">Upload</a>
     </nav>
 
   </div>
@@ -531,7 +530,7 @@
         📖 சமீபத்திய பயான்கள்
       </h2>
 
-      <div class="bayan-grid" id="bayanGrid">
+      <div class="bayan-grid" id="bayanGrid ">
         
                  <!-- BAYAN 36 -->
 
@@ -3476,7 +3475,6 @@
       </button>
      </article>
     
-    <div id="uploadedBayanDetails"></div>
   </div>
 
 </section>
@@ -3660,105 +3658,6 @@
 
   });
 
-</script>
-
-
-<script>
-/* NEW BAYAN DATA: loaded from bayan-data.json */
-(function () {
-  const DATA_URL = "bayan-data.json";
-
-  function makeElement(tag, className, text) {
-    const el = document.createElement(tag);
-    if (className) el.className = className;
-    if (text !== undefined) el.textContent = text;
-    return el;
-  }
-
-  function makeShareButton(title) {
-    const button = makeElement("button", "share-btn", "📤 பகிரவும்");
-    button.type = "button";
-    button.addEventListener("click", function () { shareBayan(title); });
-    return button;
-  }
-
-  function renderUploadedBayans(items) {
-    const grid = document.getElementById("bayanGrid");
-    const detailBox = document.getElementById("uploadedBayanDetails");
-    if (!grid || !detailBox || !Array.isArray(items)) return;
-
-    items.forEach(function (item) {
-      if (!item || !item.id || document.getElementById(item.id)) return;
-
-      const card = makeElement("article", "bayan-card");
-      card.dataset.category = item.category || "";
-      card.dataset.title = item.title || "";
-
-      card.appendChild(makeElement("div", "card-top", "🕌"));
-      const content = makeElement("div", "card-content");
-      content.appendChild(makeElement("h3", "", item.title || "புதிய பயான்"));
-      content.appendChild(makeElement("div", "speaker", "🎙️ பயான்: " + (item.speaker || "")));
-      content.appendChild(makeElement("div", "date", "📅 " + (item.date || "")));
-
-      const link = makeElement("a", "read-btn", "பயான் பார்க்க →");
-      link.href = "#" + item.id;
-      link.addEventListener("click", function (event) {
-        event.preventDefault();
-        showBayan(item.id);
-        history.replaceState(null, "", "#" + item.id);
-      });
-      content.appendChild(link);
-      card.appendChild(content);
-      grid.prepend(card);
-
-      const detail = makeElement("article", "bayan-detail");
-      detail.id = item.id;
-      detail.style.display = "none";
-      detail.appendChild(makeElement("h1", "", item.title || "புதிய பயான்"));
-      detail.appendChild(makeElement("div", "bayan-meta",
-        "🎙️ பயான்: " + (item.speaker || "") + " | 📅 " + (item.date || "")));
-
-      if (item.audio) {
-        const audio = document.createElement("audio");
-        audio.controls = true;
-        audio.preload = "metadata";
-        const source = document.createElement("source");
-        source.src = item.audio;
-        source.type = item.audio.toLowerCase().endsWith(".m4a") ? "audio/mp4" :
-                      item.audio.toLowerCase().endsWith(".ogg") ? "audio/ogg" :
-                      item.audio.toLowerCase().endsWith(".wav") ? "audio/wav" : "audio/mpeg";
-        audio.appendChild(source);
-        detail.appendChild(audio);
-      }
-
-      const textBox = makeElement("div", "bayan-text");
-      textBox.appendChild(makeElement("h2", "", item.title || ""));
-      const paragraph = makeElement("p", "", item.content || "");
-      textBox.appendChild(paragraph);
-      detail.appendChild(textBox);
-      detail.appendChild(makeShareButton(item.title || "தமிழ் பயான்"));
-      detailBox.appendChild(detail);
-    });
-
-    // Open a shared link to a newly uploaded Bayan after its data has loaded.
-    const hashId = decodeURIComponent(location.hash.replace(/^#/, ""));
-    if (hashId && document.getElementById(hashId) &&
-        document.getElementById(hashId).classList.contains("bayan-detail")) {
-      showBayan(hashId);
-    }
-  }
-
-  fetch(DATA_URL + "?v=" + Date.now())
-    .then(function (response) {
-      if (!response.ok) throw new Error("Bayan data file not found yet.");
-      return response.json();
-    })
-    .then(renderUploadedBayans)
-    .catch(function () {
-      // The original 37 Bayans continue to work if bayan-data.json is not uploaded yet.
-      console.info("No uploaded Bayan data found. Existing Bayan list remains active.");
-    });
-})();
 </script>
 
 </body>
