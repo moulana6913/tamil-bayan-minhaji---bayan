@@ -3639,6 +3639,31 @@
 
 <script>
 
+  /* DATE WISE SORT - LATEST DATE FIRST */
+  function sortBayanByDate() {
+    const grid = document.querySelector(".bayan-grid");
+    if (!grid) return;
+
+    const cards = Array.from(grid.querySelectorAll(":scope > .bayan-card"));
+
+    function getCardDate(card) {
+      const dateText = card.querySelector(".date")?.textContent || "";
+      const match = dateText.match(/(\d{1,2})-(\d{1,2})-(\d{4})/);
+      if (!match) return 0;
+      const day = Number(match[1]);
+      const month = Number(match[2]) - 1;
+      const year = Number(match[3]);
+      return new Date(year, month, day).getTime();
+    }
+
+    cards.sort((a, b) => getCardDate(b) - getCardDate(a));
+    cards.forEach(card => grid.appendChild(card));
+  }
+
+  // Automatically arrange all Bayan cards by date when the page opens.
+  sortBayanByDate();
+
+
   /* SHOW BAYAN */
 
   function showBayan(id) {
